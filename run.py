@@ -1,7 +1,7 @@
 from one_dim_exact_diagonalization_class import DensityCalculator
 
 if __name__ == '__main__':
-    max_num_sites = 6 #maximum lattice size
+    max_num_sites = 11 #maximum lattice size
     min_num_sites = 2 #minimum lattice size
 
     mu = 0.42 #chemical potential
@@ -15,9 +15,9 @@ if __name__ == '__main__':
 
     num_cores = 8 # number of cores
 
-    jf_initial = 0.001 #final hopping term after the quench - minimum value
+    jf_initial = 0.0001 #final hopping term after the quench - minimum value
     jf_final = 0.200 #final hopping term after the quench - maximum  value
-    jf_steps = 0.001 #final hopping term after the quench - increment value
+    jf_steps = 0.0001 #final hopping term after the quench - increment value
 
     # Create an instance of DensityCalculator
     density_calculator = DensityCalculator(U, mu, 
